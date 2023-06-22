@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slick-prev {
+    left: 3% !important;
+    z-index: 9999;
+}
+
+.slick-next {
+    right: 3% !important;
+    z-index: 1;
+}
+
+.slick-arrow::before {
+    content: "";
+    display: none;
+}
+
+.slick-arrow.slick-prev {
+    left: 0 !important;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.slick-arrow.slick-next {
+    right: 0 !important;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
