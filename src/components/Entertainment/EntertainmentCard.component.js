@@ -1,13 +1,17 @@
 import React from "react";
 import Slider from "react-slick";
+import { NArrow, PArrow } from "./arrows.com";
+
+
 // Import css files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import HeroCarousal from "../HeroCarousal/HeroCarousal.component";
 
 const EntertainmentCard = (props) => {
     return (
         <>
-            <div className="w-full h-30 px-2">
+            <div className="w-full h-30 px-5">
                 <img
                     className="w-full h-full rounded-xl"
                     src={props.src} alt="Entertainment Image"
@@ -18,11 +22,14 @@ const EntertainmentCard = (props) => {
 };
 
 const settings = {
-    infinitr: true,
+    arrows: true,
+    infinite: true,
     autoplay: false,
-    slidesToShow:4,
+    slidesToShow: 4,
     slidesToScroll: 4,
-    InitialSlide:0
+    InitialSlide: 0,
+    nextArrow: <NArrow />,
+    prevArrow: <PArrow />
 
 }
 
@@ -43,8 +50,8 @@ const EntertainmentCardSlider = () => {
     return (
         <>
             <Slider {...settings}>
-                {EntertainmentImage.map((Image) => ( 
-                <EntertainmentCard src={Image}/>
+                {EntertainmentImage.map((Image) => (
+                    <EntertainmentCard src={Image} />
                 ))}
             </Slider>
         </>

@@ -1,15 +1,17 @@
 import React from "react";
-import EntertainmentCrdSlider from "../components/Entertainment/EntertainmentCard.component";
+import EntertainmentCardSlider from "../components/Entertainment/EntertainmentCard.component";
+import Premier from "../components/Premier/premier.component";
 const HomePage = () => {
     return (
         <><div className="container mx-auto px-4">
-            <h1 className="text-2xl font-bold text-gray-900">
+            <h1 className="text-2xl font-bold text-gray-800">
                 The best of Entertainment
             </h1>
-            <EntertainmentCrdSlider />
+            <EntertainmentCardSlider />
+            <Premier />
         </div>
             
         </>
-    )   
-}
+    );
+};
 export default HomePage;
