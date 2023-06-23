@@ -7,7 +7,6 @@ const DefaultLayout = (props) => {
             <Navbar />
             <HeroCarousal/>
             {props.children}
-
         </>
     );
 };
