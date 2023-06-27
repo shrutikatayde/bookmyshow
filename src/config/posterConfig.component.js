@@ -13,14 +13,14 @@ const settings = {
         {
             breakpoint: 1023,
             settings: {
-                slidesToShow: 5,
-                slidesToScroll: 2,
+                slidesToShow: 4,
+                slidesToScroll: 3,
             },
         },
         {
             breakpoint: 767,
             settings: {
-                slidesToShow: 5,
+                slidesToShow: 3,
                 slidesToScroll: 1,
 
             }
