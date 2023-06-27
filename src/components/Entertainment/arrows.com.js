@@ -15,7 +15,8 @@ export const NArrow = (props) => {
                     justifyContent: "center",
                     display: "grid",
                     alignContent: "center",
-                    borderRadius: "60px"
+                    borderRadius: "60px",
+
                 }}
                 onClick={props.onClick}
             ><BsChevronRight /></div>
@@ -36,7 +37,7 @@ export const PArrow = (props) => {
                     justifyContent: "center",
                     display: "grid",
                     alignContent: "center",
-                    borderRadius: "60px"
+                    borderRadius: "60px",
                 }}
                 onClick={props.onClick}
             ><BsChevronLeft /></div>

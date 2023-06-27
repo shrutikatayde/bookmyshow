@@ -11,7 +11,7 @@ import HeroCarousal from "../HeroCarousal/HeroCarousal.component";
 const EntertainmentCard = (props) => {
     return (
         <>
-            <div className="w-full h-30 px-5">
+            <div className="w-full h-full px-5">
                 <img
                     className="w-full h-full rounded-xl"
                     src={props.src} alt="Entertainment Image"

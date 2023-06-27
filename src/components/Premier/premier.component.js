@@ -4,98 +4,27 @@ import Slider from "react-slick";
 //component
 import Poster from "../Poster/poster.component";
 
+//config
+import settings from "../../config/posterConfig.component";
+
+//images
+import PremierImages from "../../config/tempPosterConfig";
+
 const Premier = () => {
-  const settings = {
-    infinite: true,
-    autoplay: false,
-    slidesToShow: 5,
-    slideToScroll: 2,
-    InfiniteSlide: 0,
-  };
-
-  const PremierImages = [
-    {
-      src: "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00358673-yggsyblttj-portrait.jpg",
-      alt: "ISeeYou",
-      title: "I See You",
-      subtitle: "Crime, Horror, Mystery, Thriller",
-    },
-    {
-      src: "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00358673-yggsyblttj-portrait.jpg",
-      alt: "ISeeYou",
-      title: "I See You",
-      subtitle: "Crime, Horror, Mystery, Thriller",
-    },
-    {
-      src: "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00358673-yggsyblttj-portrait.jpg",
-      alt: "ISeeYou",
-      title: "I See You",
-      subtitle: "Crime, Horror, Mystery, Thriller",
-    },
-    {
-      src: "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00358673-yggsyblttj-portrait.jpg",
-      alt: "ISeeYou",
-      title: "I See You",
-      subtitle: "Crime, Horror, Mystery, Thriller",
-    },
-    {
-      src: "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00358673-yggsyblttj-portrait.jpg",
-      alt: "ISeeYou",
-      title: "I See You",
-      subtitle: "Crime, Horror, Mystery, Thriller",
-    },
-    {
-      src: "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00358673-yggsyblttj-portrait.jpg",
-      alt: "ISeeYou",
-      title: "I See You",
-      subtitle: "Crime, Horror, Mystery, Thriller",
-    },
-    {
-      src: "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00358673-yggsyblttj-portrait.jpg",
-      alt: "ISeeYou",
-      title: "I See You",
-      subtitle: "Crime, Horror, Mystery, Thriller",
-    },
-    {
-      src: "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00358673-yggsyblttj-portrait.jpg",
-      alt: "ISeeYou",
-      title: "I See You",
-      subtitle: "Crime, Horror, Mystery, Thriller",
-    },
-    {
-      src: "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00358673-yggsyblttj-portrait.jpg",
-      alt: "ISeeYou",
-      title: "I See You",
-      subtitle: "Crime, Horror, Mystery, Thriller",
-    },
-    {
-      src: "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00358673-yggsyblttj-portrait.jpg",
-      alt: "ISeeYou",
-      title: "I See You",
-      subtitle: "Crime, Horror, Mystery, Thriller",
-    },
-    {
-      src: "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00358673-yggsyblttj-portrait.jpg",
-      alt: "ISeeYou",
-      title: "I See You",
-      subtitle: "Crime, Horror, Mystery, Thriller",
-    },
-    {
-      src: "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00358673-yggsyblttj-portrait.jpg",
-      alt: "ISeeYou",
-      title: "I See You",
-      subtitle: "Crime, Horror, Mystery, Thriller",
-    },
-  ];
-
-  return (
-    <>
-      <Slider {...settings}>
-        {PremierImages.map((image) => (
-          <Poster {...image} />
-        ))}
-      </Slider>
-    </>
-  );
+    return (
+        <>
+            {/* <div className="flex flex-col items-start py-4">
+                <h2 className="text-white text-xl font-bold" >
+                    Premiers
+                </h2>
+                <p className="text-white text-sm ">Brand new release every Friday</p>
+            </div>
+            <Slider {...settings}>
+                {PremierImages.map((image) => (
+                    <Poster {...image} isDark />
+                ))}
+            </Slider> */}
+        </>
+    );
 };
 export default Premier;
