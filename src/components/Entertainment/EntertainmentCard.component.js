@@ -29,7 +29,21 @@ const settings = {
     slidesToScroll: 4,
     InitialSlide: 0,
     nextArrow: <NArrow />,
-    prevArrow: <PArrow />
+    prevArrow: <PArrow />,
+    responsive: [
+        {
+            breakpoint: 1023,
+            settings: {
+                arrows:false,
+            },
+        },
+        {
+            breakpoint: 767,
+            settings: {
+                arrows:false,
+            }
+        }
+    ]
 
 }
 
