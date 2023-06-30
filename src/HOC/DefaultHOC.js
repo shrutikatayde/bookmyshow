@@ -6,6 +6,7 @@ import { Route } from "react-router-dom";
 
 //Layouts
 import DefaultLayout from "../Layouts/DefaultLayout";
+
 const DefaultHOC = ({ component: Component, ...rest }) => {
     //components
     //props ->> path and exact property
@@ -21,9 +22,6 @@ const DefaultHOC = ({ component: Component, ...rest }) => {
 
             />
         </>
-
-    )
-
+    );
 };
-
 export default DefaultHOC;

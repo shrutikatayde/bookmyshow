@@ -4,10 +4,9 @@ const MovieLayout = (props) => {
     return (
         <>
             <MovieNavbar />
-           {props.children}
+            {props.children}
         </>
     );
 };
-
 
 export default MovieLayout;

@@ -1,13 +1,11 @@
 import React from "react";
+import MovieHero from "../components/MovieHero/MovieHero.component";
 const Movie = () => {
     return (
         <>
-            
-            <div>
-                <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1687845770319_fastxdesktop.jpg" />  
-            </div>
+            <MovieHero />
         </>
-    )
-}
+    );
+};
 
 export default Movie;
