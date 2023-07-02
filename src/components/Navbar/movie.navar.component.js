@@ -60,23 +60,24 @@ const NvLg = () => {
 const MovieNavbar = () => {
     return (
         <>
-            <nav className="absolute inset-x-0 z-30 bg-opacity-10 backdrop-filter backdrop-blur-lg lg:relative bg-navCol-700 px-4 py-4">
-                <div className="md:hidden">
-                    {/* mobile screen */}
-                    <NvSm />
+            <nav className="bg-navCol-700">
+                <div className="absolute inset-x-0 z-30 bg-opacity-10 backdrop-filter backdrop-blur-lg lg:relative bg-navCol-700 px-4 py-4 ">
+                    <div className="md:hidden">
+                        {/* mobile screen */}
+                        <NvSm />
+
+                    </div>
+                    <div className="hidden lg:hidden md:block">
+                        {/* tablet screen */}
+                        <NvSm />
+                    </div>
+                    <div className="hidden lg:flex ">
+                        {/* desktop screen */}
+                        <NvLg />
+                    </div>
 
                 </div>
-                <div className="hidden lg:hidden md:block">
-                    {/* tablet screen */}
-                    <NvSm />
-                </div>
-                <div className="hidden lg:flex">
-                    {/* desktop screen */}
-                    <NvLg />
-                </div>
-
             </nav>
-
         </>
     )
 
