@@ -7,7 +7,7 @@ import HomePage from "./pages/Home.Page";
 import Movie from "./pages/Movie.Page";
 function App() {
   return (
-    // <>
+    // <> 
     //   <Route path="/" exact component={Name} />
     //   <Route path="/movie" exact component={Name2} />
     // </>
