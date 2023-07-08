@@ -20,7 +20,7 @@ const Movie = () => {
         </div>
 
 
-        <div className="">
+        <div className="lg:w-1/2 flex flex-col items-start gap-3">
           <h2 className="text-gray-1000 font-bold text-3xl">
             Top offers for you
           </h2>
