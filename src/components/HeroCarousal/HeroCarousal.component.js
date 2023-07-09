@@ -1,5 +1,7 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
+
 import HeroSlider from "react-slick";
+import axios from "axios";
 
 //Component
 import { NextArrow, PrevArrow } from "./Arrows.component";
@@ -7,7 +9,7 @@ import { NextArrow, PrevArrow } from "./Arrows.component";
 // Import css files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { renderIntoDocument } from "react-dom/test-utils";
+//import { renderIntoDocument } from "react-dom/test-utils";
 
 const HeroCarousal = () => {
 
@@ -35,13 +37,16 @@ const HeroCarousal = () => {
 
     };
 
-    const images = [
-        "https://wallpapers.com/images/featured/dkttxahzpl44tbsa.jpg",
-        "https://www.streampicker.de/files/images/202210/0/lost-in-space-verschollen-zwischen-fremden-welten,998446_crop16x9_1280.jpg",
-        "https://wallpaperaccess.com/full/4486484.jpg",
-        "https://13stars.eu/wp-content/uploads/2022/01/squid.png",
-        "https://f.ptcdn.info/703/028/000/1424622166-gameofthro-o.jpg"
-    ]
+    const [images, setImages] = useState([]);
+    useEffect(() => {
+        const requestnowPlayingMovies = async () => {
+            const getImages = await axios.get("/movie/now_playing");
+            console.log(getImages);
+        };
+        requestnowPlayingMovies();
+     }, []);
+
+
     return (
         <>
 
