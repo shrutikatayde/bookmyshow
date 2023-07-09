@@ -47,8 +47,8 @@ const Plays = () => {
                         </h2>
                         <div>
                             <PlaysFilter title="Date" tags={["Today", "Tomarrow", "This Weekend" ]} />
-                            <PlaysFilter title="Language" tags={["Tamil", "Kannada" ]} />
-                            <PlaysFilter title="Categories" tags={["Theatre" ]} />
+                            <PlaysFilter title="Language" tags={["Tamil", "Kannada"]} />
+                            <PlaysFilter title="Categories" tags={["Theatre"]} />
                         </div>
 
                     </div>

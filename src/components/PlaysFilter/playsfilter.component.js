@@ -4,7 +4,7 @@ import defaultProps from "react-slick/lib/default-props";
 
 const PlaysFilter = (props) => {
   return (
-    <Disclosure>
+      <Disclosure className="bg-slate-800">
       {({ open }) => (
         <>
           <Disclosure.Button className="py-2 flex items-center gap-3">
