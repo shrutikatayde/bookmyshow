@@ -1,6 +1,5 @@
 import { Disclosure } from "@headlessui/react";
 import { BiChevronUp, BiChevronDown } from "react-icons/bi";
-import defaultProps from "react-slick/lib/default-props";
 
 const PlaysFilter = (props) => {
   return (
