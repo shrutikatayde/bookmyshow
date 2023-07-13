@@ -3,9 +3,9 @@ import MovieHero from "../components/MovieHero/MovieHero.component";
 import { SiBookmyshow } from 'react-icons/si';
 
 export const launchRazorpay = () => {
-  let options = {
+  const options = {
     key: "rzp_test_RaRgcuV2kUAGKp",
-    amount: 500,
+    amount: 500*100,
     currency: "INR",
     name: "Book My Show Clone",
     description: "Movie Purchase on Rental",
@@ -15,7 +15,7 @@ export const launchRazorpay = () => {
     },
     theme: { color: "#c4242d" }
   };
-  let rzp = new window.Razorpay(options);
+  const rzp = new window.Razorpay(options);
   rzp.open();
 }
 
