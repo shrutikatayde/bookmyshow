@@ -2,6 +2,24 @@ import React from "react";
 import MovieHero from "../components/MovieHero/MovieHero.component";
 import { SiBookmyshow } from 'react-icons/si';
 
+export const launchRazorpay = () => {
+  let options = {
+    key: "rzp_test_RaRgcuV2kUAGKp",
+    amount: 500,
+    currency: "INR",
+    name: "Book My Show Clone",
+    description: "Movie Purchase on Rental",
+    image: "https://asset.brandfetch.io/id4J58sqa_/idYuv668fY.png",
+    handler: () => {
+      alert("Payment Done")
+    },
+    theme: { color: "#c4242d" }
+  };
+  let rzp = new window.Razorpay(options);
+  rzp.open();
+}
+
+
 const Movie = () => {
   return (
     <>
@@ -11,7 +29,7 @@ const Movie = () => {
           <h2 className="text-gray-1000 font-bold text-3xl">About the Movie</h2>
           <p className="text-xl">
             Dom Toretto and his family must confront a terrifying new enemy
-            who`s fueled by revenge. 
+            who`s fueled by revenge.
           </p>
         </div>
 
@@ -38,6 +56,8 @@ const Movie = () => {
 
         </div>
       </div>
+
+     
 
 
     </>

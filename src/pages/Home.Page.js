@@ -5,6 +5,8 @@ import EntertainmentCardSlider from "../components/Entertainment/EntertainmentCa
 import PosterSlider from "../components/PosterSlider/PosterSlider.component";
 import TempPoster from "../config/tempPosterConfig";
 
+
+
 const HomePage = () => {
     const [popularMovies, setPopularMovies] = useState([]);
     useEffect(() => {
@@ -13,6 +15,15 @@ const HomePage = () => {
             setPopularMovies(getPopularMovies.data.results);
         };
         requestPopularMovies();
+    }, []);
+
+    const [onTheAir, setOnTheAir] = useState([]);
+    useEffect(() => {
+        const requestOnTheAir = async () => {
+            const getOnTheAir = await axios.get("/tv/on_the_air");
+            setOnTheAir(getOnTheAir.data.results);
+        };
+        requestOnTheAir();
     }, []);
 
     return (
@@ -40,7 +51,7 @@ const HomePage = () => {
 
             <div className="container mx-auto px-4">
                 <PosterSlider
-                    images={TempPoster}
+                    images={onTheAir}
                     title="Online Streaming Events"
                     isDark={false} />
             </div>
